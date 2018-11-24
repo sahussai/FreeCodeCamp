@@ -1,0 +1,8 @@
+function largestInArrays(arr) {
+  let maxArray = [];
+  for (let i in arr) {
+    console.log(`maxArray is ${maxArray} and we are pushing ${Math.max(...arr[i])}`);
+    maxArray.push(Math.max(...arr[i]));
+  }
+  return maxArray;
+}
